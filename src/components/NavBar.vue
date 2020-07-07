@@ -4,7 +4,7 @@
       <router-link to="/" class="brand-logo grey-text text-darken-4">Home</router-link>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
-          <a href="sass.html" class="grey-text text-darken-4">New Post</a>
+          <router-link to="/settings" class="grey-text text-darken-4">New Post</router-link>
         </li>
         <li>
           <router-link to="/settings" class="grey-text text-darken-4">Settings</router-link>
