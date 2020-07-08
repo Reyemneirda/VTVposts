@@ -1,8 +1,6 @@
 import { api, setToken, clearToken } from "../../api";
 import router from "@/router";
 
-//TODO = Implement properly
-
 // initial state
 const state = () => ({
   user: null,

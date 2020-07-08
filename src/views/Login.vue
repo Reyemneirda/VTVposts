@@ -5,11 +5,23 @@
         <div class="card">
           <div class="card-content">
             <ul>
-              <li v-for="(error, index) in errors" :key="index">{{ error.message }}</li>
+              <li v-for="(error, index) in errors" :key="index">
+                {{ error.message }}
+              </li>
             </ul>
-            <input v-model="username" id="username" type="text" class="validate" />
+            <input
+              v-model="username"
+              id="username"
+              type="text"
+              class="validate"
+            />
             <label for="username">Username or email</label>
-            <input v-model="password" id="password" type="password" class="validate" />
+            <input
+              v-model="password"
+              id="password"
+              type="password"
+              class="validate"
+            />
             <label for="password">Password</label>
           </div>
 
@@ -27,7 +39,7 @@ export default {
     return {
       password: "",
       username: "",
-      errors: []
+      errors: [],
     };
   },
   methods: {
@@ -35,13 +47,13 @@ export default {
       this.$store
         .dispatch("users/loginUser", {
           username: this.username,
-          password: this.password
+          password: this.password,
         })
         .then(() => (this.errors = []))
-        .catch(err => {
+        .catch((err) => {
           this.errors.push(err);
         });
-    }
-  }
+    },
+  },
 };
 </script>
