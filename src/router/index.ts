@@ -45,6 +45,11 @@ const routes: Array<RouteConfig> = [
     name: "profile",
     component: () => import("@/views/Users/Profile.vue"),
   },
+  {
+    path: "/@:username",
+    name: "personnal-page",
+    component: () => import("@/views/Users/Page.vue"),
+  },
 ];
 
 const router = new VueRouter({

@@ -10,7 +10,6 @@
 
 <script>
 import ArticlePreview from "@/components/Articles/ArticlePreview";
-
 import articleServices from "@/services/ArticleServices";
 export default {
   name: "Home",
@@ -23,7 +22,9 @@ export default {
     };
   },
   async created() {
-    this.articles = await articleServices.fetchArticles(null);
+    this.articles = await articleServices.fetchArticles(
+      this.$store.getters["users/username"]
+    );
   },
 };
 </script>

@@ -1,3 +1,78 @@
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  height: 50px;
+  padding: 12px 0 12px 0;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.search:hover {
+  color: #777;
+  font-weight: bold;
+}
+
+.article-preview {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+}
+
+.article-preview .article-meta {
+  margin: 0 0 1rem;
+}
+
+.article-preview .preview-link h1 {
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 3px;
+}
+
+.article-preview .preview-link p {
+  font-weight: 300;
+  font-size: 24px;
+  color: #999;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.article-preview .preview-link span {
+  max-width: 30%;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #bbb;
+  vertical-align: middle;
+}
+
+.article-preview .preview-link ul {
+  float: right;
+  max-width: 50%;
+  vertical-align: top;
+}
+
+.article-preview .preview-link ul li {
+  font-weight: 300;
+  font-size: 0.8rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/*Bootstrap 4 margins padding*/
 .m-0 {
   margin: 0 !important;
 }
